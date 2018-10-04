@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Choo Choo-tstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js"></script>
+    <script src="assets/javascript/logic.js"></script>
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-12 bg-secondary text-center">
+            <h1 class="display-3 text-light">Here comes the train!</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h4 class="bg-primary text-light pl-4 py-2">Current Schedule</h4>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Frequency (min)</th>
+                            <th scope="col">Next Arrival</th>
+                            <th scope="col">Minutes Away</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Thomas</th>
+                            <td>Wherever Thomas the Tank Engine Lives</td>
+                            <td>15</td>
+                            <td>4:12 PM</td>
+                            <td>4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <h4 class="bg-primary text-light pl-4 py-2">Add Train</h4>
+                <form>
+                    <div class="form-group">
+                        <label for="trainName">Train Name</label>
+                        <input class="form-control" id="trainName" placeholder="Thomas the Tank Engine">
+                    </div>
+                    <div class="form-group">
+                        <label for="destination">Destination</label>
+                        <input class="form-control" id="destination" placeholder="Anywhere">
+                    </div>
+                    <div class="form-group">
+                        <label for="start-time">First Train Time</label>
+                        <input type="time" class="form-control" id="start-time" placeholder="23:19">
+                    </div>
+                    <div class="form-group">
+                        <label for="frequency">Frequency (min)</label>
+                        <input type="number" class="form-control" id="frequency" placeholder="3">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Route</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+</html>
