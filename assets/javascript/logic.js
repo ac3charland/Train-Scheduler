@@ -58,7 +58,7 @@ function calculateNextArrival(startTime, frequency) {
     if (now.isBefore(start)) {
         return start.format("hh:mm a")
     } else {
-        var timeUntilNext = calculateMinutesAway(start)
+        var timeUntilNext = calculateMinutesAway(startTime, frequency);
         var nextTime = now.add(timeUntilNext, "minutes");
         return nextTime.format("hh:mm a");
     }
